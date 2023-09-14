@@ -19,4 +19,8 @@ resource "aws_instance" "javaec2" {
   ami           = "ami-053b0d53c279acc90"
   key_name      = "demo.pem"
   associate_public_ip_address = true
+  tags {
+      Name = "javaserver"
+  }
+
 }
